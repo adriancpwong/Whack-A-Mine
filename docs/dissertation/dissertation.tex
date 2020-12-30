@@ -1,0 +1,182 @@
+% This example An LaTeX document showing how to use the l3proj class to
+% write your report. Use pdflatex and bibtex to process the file, creating 
+% a PDF file as output (there is no need to use dvips when using pdflatex).
+
+% Modified 
+
+\documentclass{l3proj}
+
+\begin{document}
+
+\title{CraftProspect}
+
+\author{
+		Dan Cristian Cecoi \\
+		Eerika Emilia Haajanen \\
+		Craig Stewart Massie \\
+		Frances Lou Ramirez \\
+		Chun Pang Adrian Wong }
+
+\date{17 January 2018}
+
+\maketitle
+
+\begin{abstract}
+
+The abstract goes here
+
+\end{abstract}
+
+%% Comment out this line if you do not wish to give consent for your
+%% work to be distributed in electronic format.
+\educationalconsent
+
+\newpage
+
+%==============================================================================
+\section{Introduction}
+\label{sec:introduction}
+
+This document is a case study of team CSM's software development process throughout the Team Project 3 course.
+- purpose of document
+\\\\
+- outline of project
+\\\\
+The case study is structured as follows: Case study background, Project planning and team organisation, Requirements gathering, Agile programming and teamwork, Quality assurance and process improvement, and Conclusions. The Case study background describes the customer and project context, inital objectives for the project and the delivered product. Each of the following sections represents different theme and aims to demonstrate and reflect on challenges that the team faced during the project lifecycle and how we responded to and learned from them.
+
+%==============================================================================
+\section{Case Study Background}
+\label{sec:background}
+
+% information about customer  and project context, aims and
+% objectives and project state at the time of writing
+
+\subsection*{Customer organisation and background}
+
+Our customer for the team project was a Glasgow-based company called Craft Prospect whose focus was in onboard data processing for satellites, and deep learning in the application of Earth observation. Craft Prospect was founded in 2017 by professionals with previous experience in the development of small satellite systems. The company aims to collaborate on mission-level architecture and interface solutions in the NewSpace industry. Glasgow being a base for many NewSpace companies (reference, more about glasgow), the new company wishes to emerge in the marketplace and deliver "responsive yet controlled space systems" (reference to company site).
+\\\\
+The proposed project was in the area of machine learning applications in classification of satellite imagery. The short initial written description that we got of the client was that they wanted an "embedded net trained to suggest the sequence of images based on their value to a user." As the team had no previous experience of machine learning or image classification, this description didn't offer us much information. However, after speaking to the client on the first client day the team decided that this was something that we would want to know more about.
+\\\\
+
+\subsection*{Initial Objectives}
+% the rationale and initial objectives for the project.
+
+Once the team had decided on committing to the customer, we got a chance to sit down with the client and find out more about their objectives and requirements for the project. The customer explained the he was hoping to get two deliverables from this collaboration: a neural network and a game.
+\\\\
+For the neural network, we would be making use of data provided by a Kaggle competition "Planet: Understanding the Amazon from Space". The Kaggle platform hosts competitions for predictive modelling and analytics, which involve manipulation of large datasets provided by companies and users, and for this competition the dataset would be provided by Planet Labs. Planet Labs is a private Earth imaging company specialized in designing and manufacturing miniature satellites. The motivation behind the Planet competition was to prevent and increase response effectiveness of governments and stakeholders to deforestation and other illegal human activity. This could be done by creating an algorithm for labeling "satellite image chips with atmospheric conditions and various classes of land cover/land use".
+\\
+(https://www.kaggle.com/c/planet-understanding-the-amazon-from-space)
+After creating a neural network model to label satellite imagery, we were to create a game where a user could play against the model and pick out targets of importance from a 2D image, and see how they did compared to the neural network. We discussed that there would be different difficulty levels as well, but most requirements were gathered in upcoming sprints as we decided to first focus on the neural network.
+\\\\
+After our first meeting the customer asked us to email him with a brief about our approach type, and preferences for visualization, platform and graphics engine. We emailed customer that we felt we needed to do some research because all the topics are new to us, before we could provide an accurate summary of our preferences. All team members would research neural networks and image recognition as much as possible so that we could provide the brief that the client requested, and so that we could effectively proceed with requirements gathering during the next meeting.
+\\\\
+The first two months (September to mid-November) of the project were spent mostly on research, requirements gathering and building demos of very small scale neural networks to show to the client - this will be referred to as the Setup period because this is how we named it in our Gitlab milestones. Our first official sprint started in mid-November and each sprint lasted for one month. During sprint 1 we concurrently developed the neural network and the game, and finished a binary classification neural net model and had an inital demo of the game to show the client. From sprint 2 onwards we worked on advanced features for the game and moved on from binary to multi-class multi-label neural network development.
+
+- summary of what was actually achieved!, more detail
+summary of how worked during next sprints until delivery
+
+- who was the product for?
+- references to similar related projects?
+
+
+\subsection*{Delivered Software}
+
+
+here is stuff
+
+%==============================================================================
+\section{Project Planning and Team Organisation}
+\label{sec:planning}
+
+
+\subsection*{Team roles}
+During our first sprint we decided it would be good to assign some more specific roles in the team so that there would be a more clear understanding of the responsibilities and specific tasks of each member. We assigned the roles of customer liaison, secretary, merge master and milestone planner. The customer liaison would be the main point of contact for the customer, and this way there would be less confusion about who was responsible for notifying the customer about meeting times and deliverables. The secretary was to take notes of team and customer meetings and summarize these for the Gitlab wiki pages. The merge master was responsible for resolving any merge conflicts on Gitlab and communicating with the individuals involved in the conflicts to resolve them as best as possible. The milestone planner would create the new milestones and organize the issues within them (moving unfinished issues from previous sprints to the current sprint, for example).
+\\\\
+We also had a discussion about how we would conduct and organize code review. Our mentors let us know about 2 possible approaches we could take: we could assign the role of code review to a few select team members who would be responsible for all code review, or we could decide to all be code reviewers. We chose the latter option.
+WHY??
+
+\subsection*{Communication}
+Communication between the group and our mentors was through the Discord application. We started with just one channel for communication but ended up with multiple channels for different purposes. We had channels for internal team communication, resources and one for mentor communication (this became necessary so that they could mute the other channels and not be bothered with irrelevant notifications) where we confirmed meeting times and informed each other about any absences. We were happy with this medium of communication because it allowed us to quickly share resources and we were familiar with the app overall.
+\\\\
+Customer communication in the very beginning was through email, but then we created a Slack group for the team members and customer where we could arrange and confirm meeting times. The team member who had been appointed as customer liaison was mostly responsible for these communications and delivering any updates and other requested material to the customer.
+
+\subsection*{Project planning}
+A large portion of the project planning was during the setup period. In order to properly plan what we needed to get done during the project and how we should approach it, we first needed to familiarise ourselves with the unfamiliar concepts and technologies that the project required. However, because we realized that the requirements and our understanding of them would change throughout the project, we knew that project planning would be a continuous effort and not a one-time thing. More planning was required after each official meeting with the customer where we gathered and clarified requirements. Sometimes we even had to take a few steps back and redo something we had misunderstood based on previous information or the lack of it.
+\\\\
+One example of this is when during our official client meeting in December we demoed our progress on the game. We showed the user interface and explained the backend of the game we implemented so far.  During this, we realised that one aspect of the implementation was incorrect. We had implemented the game where we identify points on a large image instead of sectioning a large image and identifying the class of each section. Everything else in the implementation met the clients requirements, but we took any criticism very seriously and tried out best to meet the customer's wishes during the next sprint. Each progress demonstration meeting resulted in some shift in the project plan, which was expected as shifting goals and plans are characteristic to an agile working style. REFERENCE?
+
+%==============================================================================
+\section{Requirements Gathering}
+\label{sec:requirements}
+
+Our initial understanding of the requirements was summed up in the project brief that the client asked us to send him. 
+\\\\
+Before our next official client meeting, we created user personas, user stories and wireframes to be able to understand the context of the project a bit better. We also prepared a list of questions to ask the client to clarify certain aspects of the game. We also had questions regarding the limitations of the hardware provided by the client as there were two teams who both needed a GPU for training the neural network but only one GPU offered by the client. From the very beginning the client was very open to our ideas and suggestions so we found it very easy to come to an understanding about any issues. He would usually give us a more general guideline which gave us some room to improvise, but he would emphasize the importance of certain features that he wanted. 
+
+15.10.2017 meeting
+
+
+updated requirements 15.11.2017
+\\\\
+ algorithm that can detect the Class Labels listed in the competition such as Cloudy, Primary(forest), Roads+Primary etc. Then we will train (with the NVidia TX2) our algorithm to recognise activities such as Slash and Burn and Mining on these areas
+ 
+After the meeting in November we were able to 
+
+updated requirements 24.01.2018
+
+- solution to GPU problem, support from university 
+
+(in beginning, only thought that game was to play against model, later realised that had more specific educational purpose)
+- openness of customer to our ideas
+-setup period
+
+-sprints
+
+%==============================================================================
+
+\section{Agile Programming and Teamwork}
+\label{sec:agile}
+
+
+\subsection*{Retrospectives}
+
+We used retrospectives about every 2 weeks (during and after each sprint) as a way to reflect on what we had done well in the sprint and what could be improved. We used the start-stop-continue structure for all retrospectives and then came up with an action plan to sum up how we could make the best changes in the future.
+\\\\
+The problems in the beginning were mostly related to timing and communication - the team hadn't established a set meeting time yet and as a result the team wasn't in the same place at the same time when it was needed. There was confusion over individual responsibilities and about what everyone was working on. The plan was to set up a more concrete schedule to follow so that the team meeting time wouldn't be wasted on waiting for others to show up. We solved the problem regarding confusion about responsibilities by making use of Gitlab: we created issues and started to actively use the kanban structure that Gitlab provided. Additional structure for client meetings was solved by planning on sitting down with the team before client meetings and planning the meeting structure and how we would talk to the client (splitting questions, showing demonstrations etc).
+\\\\
+After sprint 1 we still had some problems with timing, but also with how to split the work. A lot of the tasks were very large and they required splitting to be more manageable, and we realized that communication had to be improved between development of the neural network and the game. We were happier with team communication and how all members were getting along and helping each other.
+After sprint 2 the action plan was to start weekly standups with the team to increase clarity of individual progress and splitting of tasks. We also planned to meet more frequently so that work would be done more regularly throughout the sprint as opposed to small bursts. There were some problems with not informing team members of absences in time, and we aimed to start making use of communication channels more effectively to avoid confusion.
+\\\\
+
+\subsection*{Standups}
+
+Standups were done weekly on every official team meeting day since sprint 2. The standard structure of a daily standup was thus slightly altered to suit a weekly standup schedule. The three things each team member addressed were what they had done during the past week, what they were working on now, and if there were any problems related to completing the task. From the restrospectives it had become apparent that there were some problems related to communication about tasks, and the standups allowed us to more formally address the progress and complications we were experiencing. 
+
+\subsection*{Planning poker}
+
+Planning poker was started on sprint 3. The purpose of this was to analyse the difficulty of new issues and to assign each one some unit of time, which served as the approximate amount of time it would take for one team member to complete the task. During the first planning poker we discovered that because the team had mostly split into game development, neural network development and writing the dissertation, it was difficult for team members to assess the difficulty of tasks that they wouldn't be involved in. The estimated effort for tasks was much higher for those unfamiliar with the task than for those who had been working on similar tasks before, and the confidence in the estimations was also much lower due to lack of experience. This meant that estimations for a single task had significant variance and this increased the time to come to a consensus. We questioned the usefulness of planning poker for these reasons, and agreed that the estimations would be more accurate if the specialized team members were in charge of deciding. Nevertheless, this practice gave us insight into analysing and breaking down tasks and their required effort. It allowed us to realize that one task was too large to be assigned to just one person, and it was more reasonable to split it into smaller tasks. This was helpful, as splitting of issues had been a problem throughout the development process.
+
+\subsection*{Team communication}
+
+
+
+%==============================================================================
+\section{Quality Assurance and Process Improvement}
+\label{sec:managing}
+
+include formative assessment
+
+%------------------------------------------------------------------------------
+\section{Conclusions}
+
+Explain the wider lessons that you learned about software engineering,
+based on the specific issues discussed in previous sections.  Reflect
+on the extent to which these lessons could be generalised to other
+types of software project.  Relate the wider lessons to others
+reported in case studies in the software engineering literature.
+
+
+%==============================================================================
+\bibliographystyle{plain}
+\bibliography{dissertation}
+\end{document}
